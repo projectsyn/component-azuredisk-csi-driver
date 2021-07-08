@@ -7,4 +7,5 @@ local params = inv.parameters.azuredisk_csi_driver;
 
 // Define outputs below
 {
+  '00_namespace': kube.Namespace(params.namespace),
 }
