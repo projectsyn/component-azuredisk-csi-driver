@@ -1,0 +1,4 @@
+parameters:
+  azuredisk_csi_driver:
+    =_metadata: {}
+    namespace: syn-azuredisk-csi-driver

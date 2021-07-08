@@ -1,0 +1,7 @@
+:global:
+  componentName: azuredisk-csi-driver
+  githubUrl: https://github.com/projectsyn/component-azuredisk-csi-driver
+
+docs/antora.yml:
+  name: azuredisk-csi-driver
+  title: azuredisk-csi-driver
