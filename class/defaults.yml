@@ -2,3 +2,6 @@ parameters:
   azuredisk_csi_driver:
     =_metadata: {}
     namespace: syn-azuredisk-csi-driver
+    charts:
+      azuredisk-csi-driver: v1.4.0
+    helm_values: {}
