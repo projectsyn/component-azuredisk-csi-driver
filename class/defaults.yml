@@ -4,4 +4,6 @@ parameters:
     namespace: syn-azuredisk-csi-driver
     charts:
       azuredisk-csi-driver: v1.4.0
-    helm_values: {}
+    helm_values:
+      snapshot:
+        enabled: true
