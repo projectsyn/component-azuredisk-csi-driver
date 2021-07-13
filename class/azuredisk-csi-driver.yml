@@ -15,7 +15,7 @@ parameters:
           - azuredisk-csi-driver/component/main.jsonnet
         input_type: jsonnet
         output_path: azuredisk-csi-driver/
-      - input_type: helm  
+      - input_type: helm
         input_paths:
           - azuredisk-csi-driver/helmcharts/azuredisk-csi-driver/${azuredisk_csi_driver:charts:azuredisk-csi-driver}/
         helm_values: ${azuredisk_csi_driver:helm_values}
