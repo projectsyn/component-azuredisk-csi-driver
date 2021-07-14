@@ -5,7 +5,7 @@ parameters:
         source: https://raw.githubusercontent.com/kubernetes-sigs/azuredisk-csi-driver/master/charts
         chart_name: azuredisk-csi-driver
         version: ${azuredisk_csi_driver:charts:azuredisk-csi-driver}
-        output_path: dependencies/azuredisk-csi-driver/helmcharts/azuredisk-csi-driver
+        output_path: dependencies/azuredisk-csi-driver/helmcharts/azuredisk-csi-driver/${azuredisk_csi_driver:charts:azuredisk-csi-driver}/
     compile:
       - input_paths:
           - azuredisk-csi-driver/component/app.jsonnet
@@ -15,9 +15,9 @@ parameters:
           - azuredisk-csi-driver/component/main.jsonnet
         input_type: jsonnet
         output_path: azuredisk-csi-driver/
-      - input_type: helm  
+      - input_type: helm
         input_paths:
-          - azuredisk-csi-driver/helmcharts/azuredisk-csi-driver
+          - azuredisk-csi-driver/helmcharts/azuredisk-csi-driver/${azuredisk_csi_driver:charts:azuredisk-csi-driver}/
         helm_values: ${azuredisk_csi_driver:helm_values}
         helm_params:
           release_name: ${_instance}
