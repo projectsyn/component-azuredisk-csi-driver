@@ -1,6 +1,6 @@
 = Add a Storage for the Azure CSI Driver
 
-Use the [StorageClass Component](https://github.com/projectsyn/component-storageclass) to add a StorageClass for the Azure CSI Driver
+Use the [StorageClass Component](https://github.com/projectsyn/component-storageclass) to add a StorageClass for the Azure CSI Driver.
 
 Example:
 
