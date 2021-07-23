@@ -6,14 +6,15 @@ Example:
 
 [source,yaml]
 ----
-storageclass:
-  defaultClass: "managed-csi"
-  classes:
-    managed-csi:
-      provisioner: disk.csi.azure.com
-      parameters:
-        skuname: StandardSSD_LRS  # alias: storageaccounttype, available values: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS
-      reclaimPolicy: Delete
-      volumeBindingMode: Immediate
-      allowVolumeExpansion: true
+parameters:
+  storageclass:
+    defaultClass: "managed-csi"
+    classes:
+      managed-csi:
+        provisioner: disk.csi.azure.com
+        parameters:
+          skuname: StandardSSD_LRS  # alias: storageaccounttype, available values: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS
+        reclaimPolicy: Delete
+        volumeBindingMode: Immediate
+        allowVolumeExpansion: true
 ----
