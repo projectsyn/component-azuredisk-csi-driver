@@ -10,13 +10,21 @@ default:: `syn-azuredisk-csi-driver`
 
 The namespace in which to deploy this component.
 
+== `charts.azuredisk-csi-driver`
+
+[horizontal]
+type:: string
+default:: `v1.5.0`
+
+The helm chart version going to be used.
+
 == `helm_values`
 
 [horizontal]
 type:: dict
 default:: see `defaults.yml`
 
-All helm_values are passed to the helm chart.
+All helm_values are passed to the helm chart. See [values.yaml](https://github.com/kubernetes-sigs/azuredisk-csi-driver/blob/master/charts/v1.5.0/azuredisk-csi-driver/values.yaml) for details.
 
 == Example
 

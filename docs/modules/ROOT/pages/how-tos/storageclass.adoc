@@ -1,0 +1,20 @@
+= Add a Storage Class for the Azure CSI Driver
+
+Use the [StorageClass Component](https://github.com/projectsyn/component-storageclass) to add a StorageClass for the Azure CSI Driver.
+
+Example:
+
+[source,yaml]
+----
+parameters:
+  storageclass:
+    defaultClass: "managed-csi"
+    classes:
+      managed-csi:
+        provisioner: disk.csi.azure.com
+        parameters:
+          skuname: StandardSSD_LRS  # alias: storageaccounttype, available values: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS
+        reclaimPolicy: Delete
+        volumeBindingMode: Immediate
+        allowVolumeExpansion: true
+----
