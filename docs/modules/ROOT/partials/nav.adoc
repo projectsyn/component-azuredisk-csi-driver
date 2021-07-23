@@ -1,3 +1,3 @@
 * xref:index.adoc[Home]
-* xref:how-tos/storageclass.adoc[Add a Storage for the Azure CSI Driver]
+* xref:how-tos/storageclass.adoc[Add a Storage Class for the Azure CSI Driver]
 * xref:references/parameters.adoc[Parameters]
