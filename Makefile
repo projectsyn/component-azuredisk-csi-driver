@@ -1,3 +1,9 @@
+#
+# File managed by ModuleSync - Do Not Edit
+#
+# Additional Makefiles can be added to `.sync.yml` in 'Makefile.includes'
+#
+
 MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
@@ -42,10 +48,11 @@ docs-serve: ## Preview the documentation
 
 .PHONY: compile
 .compile:
+	mkdir -p dependencies
 	$(COMMODORE_CMD)
 
 .PHONY: test
-test: commodore_args = -f tests/$(instance).yml
+test: commodore_args = -f tests/$(instance).yml --search-paths ./dependencies
 test: .compile ## Compile the component
 
 .PHONY: clean
