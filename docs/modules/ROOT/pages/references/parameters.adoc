@@ -14,7 +14,7 @@ The namespace in which to deploy this component.
 
 [horizontal]
 type:: string
-default:: `v1.5.0`
+default:: `v1.7.0`
 
 The helm chart version going to be used.
 
