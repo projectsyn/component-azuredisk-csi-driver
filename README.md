@@ -1,3 +1,10 @@
+# ⚠️ Repo Archive Notice
+
+As of Apr 8, 2022, this component will no longer be updated.
+
+Since Kubernetes 1.21 the Azuredisk CSI driver is automatically installed on new and upgraded clusters.
+[Manually installed drivers must be removed](https://docs.microsoft.com/en-us/azure/aks/csi-storage-drivers).
+
 # Commodore Component: azuredisk-csi-driver
 
 This is a [Commodore][commodore] Component for azuredisk-csi-driver.
